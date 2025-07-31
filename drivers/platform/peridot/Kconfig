@@ -1,0 +1,17 @@
+# Xiaomi configuration options
+
+config MACH_XIAOMI_SM8635
+	bool "Xiaomi SM8635"
+	depends on ARCH_QCOM
+	help
+	  Support for SM8635 Xiaomi variants
+
+menu "Xiaomi board selection"
+
+	config MACH_XIAOMI_PERIDOT
+		bool "POCO F6/Redmi Turbo 3 board"
+		depends on MACH_XIAOMI_SM8635
+		help
+		  Support for POCO F6/Redmi Turbo 3 variant
+
+endmenu
